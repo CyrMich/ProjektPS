@@ -29,7 +29,7 @@ Konsola Klienta - Użytkownik ma dostęp do następujących poleceń:
 /quit lub /exit – Powoduje wylogowanie i zamknięcie aplikacji.
 
 
-Instrukcja Uruchomienia
+Instrukcja uruchomienia
 1. Uruchom klasę server.ChatServer.
 2. Uruchom jedną lub więcej instancji client.ChatClient.
 3. W oknie klienta podaj nazwę użytkownika.
