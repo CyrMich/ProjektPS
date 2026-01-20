@@ -1,7 +1,7 @@
 Projekt stanowi implementację wielowątkowego serwera czatu oraz dedykowanego klienta konsolowego. Aplikacja wykorzystuje gniazda sieciowe oraz protokół TCP/IP, zapewniając stabilną komunikację w czasie rzeczywistym.
 
 
-Projekt podzielony jest na dwa główne pakiety: server (logika zarządzania) oraz client (interfejs użytkownika).
+Projekt podzielony jest na dwa główne pakiety: server oraz client.
 
 Pakiet server:
 - ChatServer.java: Centralny punkt systemu. Odpowiada za akceptowanie połączeń, zarządzanie listą aktywnych klientów oraz prowadzenie historii wiadomości.
@@ -17,21 +17,21 @@ Funkcjonalności i Komendy
 
 Konsola Serwera (Admin) - Administrator może wpisywać komendy bezpośrednio w oknie serwera:
 
-/history – Wyświetla wszystkie wiadomości od momentu startu serwera.
+/history - Wyświetla wszystkie wiadomości od momentu startu serwera.
 
-/users – Wyświetla listę zalogowanych użytkowników wraz z ich liczbą.
+/users - Wyświetla listę zalogowanych użytkowników wraz z ich liczbą.
 
-/quit – Bezpiecznie zamyka serwer.
+/quit - Bezpiecznie zamyka serwer.
 
 Konsola Klienta - Użytkownik ma dostęp do następujących poleceń:
 
-/help – Wyświetla pomoc.
+/help - Wyświetla pomoc.
 
-/users – Wyświetla listę osób online.
+/users - Wyświetla listę osób online.
 
-/time – Wyświetla czas systemowy serwera.
+/time - Wyświetla czas systemowy serwera.
 
-/quit lub /exit – Powoduje wylogowanie i zamknięcie aplikacji.
+/quit lub /exit - Powoduje wylogowanie i zamknięcie aplikacji.
 
 
 Instrukcja uruchomienia
