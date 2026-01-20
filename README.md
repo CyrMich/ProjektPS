@@ -17,16 +17,21 @@ Funkcjonalności i Komendy
 
 Konsola Serwera (Admin) - Administrator może wpisywać komendy bezpośrednio w oknie serwera:
 
- /history – Wyświetla wszystkie wiadomości od momentu startu serwera.
- /users – Wyświetla listę zalogowanych użytkowników wraz z ich liczbą.
- /quit – Bezpiecznie zamyka serwer.
+/history – Wyświetla wszystkie wiadomości od momentu startu serwera.
+
+/users – Wyświetla listę zalogowanych użytkowników wraz z ich liczbą.
+
+/quit – Bezpiecznie zamyka serwer.
 
 Konsola Klienta - Użytkownik ma dostęp do następujących poleceń:
 
- /help – Wyświetla pomoc.
- /users – Wyświetla listę osób online.
- /time – Wyświetla czas systemowy serwera.
- /quit lub /exit – Powoduje wylogowanie i zamknięcie aplikacji.
+/help – Wyświetla pomoc.
+
+/users – Wyświetla listę osób online.
+
+/time – Wyświetla czas systemowy serwera.
+
+/quit lub /exit – Powoduje wylogowanie i zamknięcie aplikacji.
 
 
 Instrukcja uruchomienia
