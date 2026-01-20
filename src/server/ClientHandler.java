@@ -39,7 +39,6 @@ public class ClientHandler implements Runnable {
                 return;
             }
 
-            // Teraz, gdy nazwa jest OK, ustawiamy ją i dodajemy klienta do listy
             this.username = inputName;
             ChatServer.addClient(this);
 
@@ -56,7 +55,6 @@ public class ClientHandler implements Runnable {
             }
 
         } catch (IOException e) {
-            // Błąd połączenia zostanie obsłużony w closeConnection()
         } finally {
             closeConnection();
         }
@@ -78,7 +76,7 @@ public class ClientHandler implements Runnable {
     }
 
     private synchronized void closeConnection() {
-        if (isClosed) return; // Zapobiega podwójnemu rozłączeniu
+        if (isClosed) return;
         isClosed = true;
 
         try {
@@ -97,12 +95,10 @@ public class ClientHandler implements Runnable {
 
     private void sendMessageHistory() {
         try {
-            // Pobieramy listę OBIEKTÓW
             List<ChatMessage> history = ChatServer.getMessageHistory();
 
             out.println("=== HISTORIA WIADOMOŚCI (" + history.size() + ") ===");
             for (ChatMessage msg : history) {
-                // Metoda toString() w ChatMessage sformatuje to na ładny tekst
                 out.println(msg.toString());
             }
             out.println("=== KONIEC HISTORII ===");

@@ -28,7 +28,7 @@ public class ChatClient {
 
             System.out.println("[OK] Połączono!");
 
-            if (!login()) return; // Jeśli login zawiedzie, skocz do finally
+            if (!login()) return;
 
             messageReceiver = new MessageReceiver(in);
             new Thread(messageReceiver).start();
@@ -40,7 +40,6 @@ public class ChatClient {
             closeConnection();
         }
     }
-
     private boolean login() throws IOException {
         String serverMessage = in.readLine();
         if ("PODAJ_NAZWE".equals(serverMessage)) {
@@ -60,7 +59,6 @@ public class ChatClient {
         }
         return false;
     }
-
     private void handleUserInput() {
         while (scanner.hasNextLine()) {
             String msg = scanner.nextLine();
@@ -68,7 +66,6 @@ public class ChatClient {
             if (msg.equalsIgnoreCase("/quit") || msg.equalsIgnoreCase("/exit")) break;
         }
     }
-
     private synchronized void closeConnection() {
         if (isClosed) return;
         isClosed = true;
@@ -79,7 +76,6 @@ public class ChatClient {
             if (socket != null) socket.close();
             System.out.println("[INFO] Rozłączono z serwerem.");
         } catch (IOException e) {
-            // ciche zamknięcie
         }
     }
 

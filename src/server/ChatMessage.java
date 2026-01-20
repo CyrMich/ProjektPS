@@ -15,8 +15,6 @@ public class ChatMessage {
         this.isSystemMessage = isSystemMessage;
         this.timestamp = new SimpleDateFormat("HH:mm:ss").format(new Date());
     }
-
-    // Metoda formatująca wiadomość do wysłania klientowi
     @Override
     public String toString() {
         if (isSystemMessage) {
